@@ -119,3 +119,13 @@ open the configuration file /Users/your-user/.gitconfig
 
         git restore --source=HEAD~1 file.js
 
+### Browsing History
+
+* **Viewing the history**
+
+        git log --stat                  # Shows the list of modified files
+        git log --patch                 # Shows the actual changes (patches)
+        
+* **Filtering the history**
+
+        

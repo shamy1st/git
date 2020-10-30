@@ -80,3 +80,14 @@ open the configuration file /Users/your-user/.gitconfig
         git diff --staged               # Shows staged changes (staging area vs committed)
         git diff --cached               # Shows staged changes (staging area vs committed)
 
+* **Visual Diff Tools**
+
+        # set default diff tool to "Visual Studio Code"
+        git config --global diff.tool vscode                                            
+        # tell git how to run diff tool, check .gitconfig file because "$LOCAL $REMOTE" is missing
+        git config --global difftool.vscode.cmd "code --wait --diff $LOCAL $REMOTE"
+        
+        git difftool                    # Shows unstaged changes (working directory vs staging area)
+        git difftool --staged           # Shows staged changes (staging area vs committed)
+        
+        

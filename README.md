@@ -90,4 +90,10 @@ open the configuration file /Users/your-user/.gitconfig
         git difftool                    # Shows unstaged changes (working directory vs staging area)
         git difftool --staged           # Shows staged changes (staging area vs committed)
         
+* **Viewing the history**
+
+        git log                         # Full history (newest to oldest)
+        git log --reverse               # Full history (oldest to newest)
+        git log --oneline               # Summary (newest to oldest)
+        git log --oneline --reverse     # Summary (oldest to newest)
         

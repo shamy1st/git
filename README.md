@@ -117,5 +117,5 @@ open the configuration file /Users/your-user/.gitconfig
         
 * **Restoring an earlier version of a file**
 
-        git restore --source=HEAD~2 file.js
+        git restore --source=HEAD~1 file.js
 

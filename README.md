@@ -2,7 +2,7 @@
 **Git** is the most popular version control system.
 
 ### Configuration
-open the configuration file /Users/<your-user>/.gitconfig
+open the configuration file /Users/your-user/.gitconfig
 
     git config --global -e
 

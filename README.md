@@ -4,7 +4,9 @@
 ### Configuration
 * **System** all users
   * **Name**
-    git config --global user.name "Ahmed Elshamy"
+  
+        git config --global user.name "Ahmed Elshamy"
+        
   * **Email**
   * **Default Editor**
   * **Line Ending**

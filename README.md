@@ -97,3 +97,14 @@ open the configuration file /Users/your-user/.gitconfig
         git log --oneline               # Summary (newest to oldest)
         git log --oneline --reverse     # Summary (oldest to newest)
         
+* **Viewing a commit**
+
+        git show 921a2ff                # Shows the given commit
+        git show HEAD                   # Shows the last commit
+        git show HEAD~2                 # Two steps before the last commit
+        git show HEAD:file.js           # Shows the version of file.js stored in the last commit
+        
+* **Unstaging files (undoing git add)**
+
+        git restore --staged file.js    # Copies the last version of file.js from repo to index
+        

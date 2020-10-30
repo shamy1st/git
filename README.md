@@ -21,6 +21,13 @@ open the configuration file /Users/your-user/.gitconfig
         git config --global core.editor "code --wait"
         
   * **Line Ending**
+  
+        For MacOs / Linux
+        git config --global core.autocrlf input
+        
+        For Windows
+        git config --global core.autocrlf true
+  
   ![](https://github.com/shamy1st/git/blob/main/config-line-ending-1.png)
   ![](https://github.com/shamy1st/git/blob/main/config-line-ending-2.png)
 * **Local** the current repository

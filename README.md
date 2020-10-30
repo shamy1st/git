@@ -7,6 +7,7 @@ open the configuration file /Users/your-user/.gitconfig
     git config --global -e
 
 * **System** all users
+* **Local** the current repository
 * **Global** all repositories of the current user
   * **Name**
   
@@ -30,4 +31,4 @@ open the configuration file /Users/your-user/.gitconfig
   
     ![](https://github.com/shamy1st/git/blob/main/config-line-ending-1.png)
     ![](https://github.com/shamy1st/git/blob/main/config-line-ending-2.png)
-* **Local** the current repository
+

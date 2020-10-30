@@ -55,10 +55,7 @@ open the configuration file /Users/your-user/.gitconfig
 
         git commit -m "Message"         # Commits with a one-line message
         git commit                      # Opens the default editor to type a long message
-
-* **Skipping the staging area**
-
-        git commit -am "Message"
+        git commit -am "Message"        # Skipping the staging area
 
 * **List files in staging area**
 
@@ -73,10 +70,8 @@ open the configuration file /Users/your-user/.gitconfig
 
         git mv file1.js file1.txt
 
-* **all gitignore file templates for all languages**
-    https://github.com/github/gitignore
-
-* **gitignore file template for java**
-    https://github.com/github/gitignore/blob/master/Java.gitignore
+* **gitignore**
+    * [All Programming languages templates](https://github.com/github/gitignore)
+    * [Java template](https://github.com/github/gitignore/blob/master/Java.gitignore)
 
 

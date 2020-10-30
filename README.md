@@ -35,40 +35,48 @@ open the configuration file /Users/your-user/.gitconfig
 
 ### Snapshots
 
-**Initializing a repository**
-git init
+* **Initializing a repository**
+        
+        git init
 
-**Staging files**
-git add file1.js                # Stages a single file
-git add file1.js file2.js       # Stages multiple files
-git add *.js                    # Stages with a pattern
-git add .                       # Stages the current directory and all its content                                       
+* **Staging files**
 
-**Viewing the status**
-git status                      # Full status
-git status -s                   # Short status
+        git add file1.js                # Stages a single file
+        git add file1.js file2.js       # Stages multiple files
+        git add *.js                    # Stages with a pattern
+        git add .                       # Stages the current directory and all its content                                       
 
-**Committing the staged files**
-git commit -m "Message"         # Commits with a one-line message
-git commit                      # Opens the default editor to type a long message
+* **Viewing the status**
 
-**Skipping the staging area**
-git commit -am "Message"
+        git status                      # Full status
+        git status -s                   # Short status
 
-**List files in staging area**
-git ls-files
+* **Committing the staged files**
 
-**Removing files**
-git rm file1.js                 # Removes from working directory and staging area
-git rm --cached file1.js        # Removes from staging area only
+        git commit -m "Message"         # Commits with a one-line message
+        git commit                      # Opens the default editor to type a long message
 
-**Renaming or moving files**
-git mv file1.js file1.txt
+* **Skipping the staging area**
 
-**all gitignore file templates for all languages**
-https://github.com/github/gitignore
+        git commit -am "Message"
 
-**gitignore file template for java**
-https://github.com/github/gitignore/blob/master/Java.gitignore
+* **List files in staging area**
+
+        git ls-files
+
+* **Removing files**
+
+        git rm file1.js                 # Removes from working directory and staging area
+        git rm --cached file1.js        # Removes from staging area only
+
+* **Renaming or moving files**
+
+        git mv file1.js file1.txt
+
+* **all gitignore file templates for all languages**
+    https://github.com/github/gitignore
+
+* **gitignore file template for java**
+    https://github.com/github/gitignore/blob/master/Java.gitignore
 
 

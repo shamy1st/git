@@ -138,7 +138,8 @@ open the configuration file /Users/your-user/.gitconfig
         git log file.txt                # Commits that touched file.txt
         
 * **Formatting the log output**
+[Docs](https://git-scm.com/docs/git-log)
 
-        git log --pretty=format:"%an committed %H"          # [Docs](https://git-scm.com/docs/git-log)
+        git log --pretty=format:"%an committed %H"
 
 * ****

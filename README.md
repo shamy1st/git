@@ -21,4 +21,6 @@ open the configuration file /Users/your-user/.gitconfig
         git config --global core.editor "code --wait"
         
   * **Line Ending**
+  ![](https://github.com/shamy1st/git/blob/main/config-line-ending-1.png)
+  ![](https://github.com/shamy1st/git/blob/main/config-line-ending-2.png)
 * **Local** the current repository

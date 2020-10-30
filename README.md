@@ -108,3 +108,10 @@ open the configuration file /Users/your-user/.gitconfig
 
         git restore --staged file.js    # Copies the last version of file.js from repo to index
         
+* **Discarding local changes**
+
+        git restore file.js             # Copies file.js from index to working directory
+        git restore file1.js file2.js   # Restores multiple files in working directory
+        git restore .                   # Discards all local changes (except untracked files)
+        git clean -fd                   # Removes all untracked files
+        

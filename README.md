@@ -3,6 +3,7 @@
 
 ### Configuration
 * **System** all users
+* **Global** all repositories of the current user
   * **Name**
   
         git config --global user.name "Ahmed Elshamy"
@@ -12,6 +13,8 @@
         git config --global user.email ahmed.elshamy@example.com
         
   * **Default Editor**
+  
+        git config --global core.editor "code --wait"
+        
   * **Line Ending**
-* **Global** all repositories of the current user
 * **Local** the current repository

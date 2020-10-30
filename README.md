@@ -128,4 +128,15 @@ open the configuration file /Users/your-user/.gitconfig
         
 * **Filtering the history**
 
+        git log -3                      # Shows the last 3 commits
+        git log --author="Ahmed"
+        git log --before="2020-10-30"
+        git log --after="one week ago"
+        git log --grep="GUI"            # Commits with “GUI” in their message
+        git log -S"GUI"                 # Commits with “GUI” in their patches
+        git log hash1..hash2            # Range of commits
+        git log file.txt                # Commits that touched file.txt
+        
+* **Formatting the log output**
+
         

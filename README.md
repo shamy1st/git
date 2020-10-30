@@ -74,4 +74,9 @@ open the configuration file /Users/your-user/.gitconfig
     * [All Programming languages templates](https://github.com/github/gitignore)
     * [Java template](https://github.com/github/gitignore/blob/master/Java.gitignore)
 
+* **Viewing the staged/unstaged changes**
+
+        git diff                        # Shows unstaged changes (working directory vs staging area)
+        git diff --staged               # Shows staged changes (staging area vs committed)
+        git diff --cached               # Shows staged changes (staging area vs committed)
 

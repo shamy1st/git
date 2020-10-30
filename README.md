@@ -2,6 +2,10 @@
 **Git** is the most popular version control system.
 
 ### Configuration
+open the configuration file /Users/<your-user>/.gitconfig
+
+    git config --global -e
+
 * **System** all users
 * **Global** all repositories of the current user
   * **Name**

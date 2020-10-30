@@ -19,6 +19,7 @@ open the configuration file /Users/your-user/.gitconfig
         
   * **Default Editor**
   
+        For "Visual Studio Code"
         git config --global core.editor "code --wait"
         
   * **Line Ending**

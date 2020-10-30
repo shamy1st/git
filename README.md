@@ -8,6 +8,9 @@
         git config --global user.name "Ahmed Elshamy"
         
   * **Email**
+  
+        git config --global user.email ahmed.elshamy@example.com
+        
   * **Default Editor**
   * **Line Ending**
 * **Global** all repositories of the current user

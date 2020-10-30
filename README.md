@@ -143,12 +143,14 @@ open the configuration file /Users/your-user/.gitconfig
 
 * **Creating an alias**
 
-        git config --global alias.lg "git log --pretty=format:'%Cgreen%an%Creset committed %h %cd'"
+        git config --global alias.lg "log --pretty=format:'%Cgreen%an%Creset committed %h %cd'"
 
 * **Viewing a commit**
 
         git show HEAD~2
         git show HEAD~2:file1.txt       # Shows the version of file stored in this commit
+        git show HEAD~2 --name-only     # Shows files names only without modifications detail
+        git show HEAD~2 --name-status   # Shows files names with indicator modified or not with details
 
 * **Comparing commits**
 
@@ -163,7 +165,7 @@ open the configuration file /Users/your-user/.gitconfig
         
 * **Finding a bad commit**
 
-        git bisect start                # 
+        git bisect start                # start a new bisect branch
         git bisect bad                  # Marks the current commit as a bad commit
         git bisect good ca49180         # Marks the given commit as a good commit
         git bisect reset                # Terminates the bisect session
@@ -181,6 +183,7 @@ open the configuration file /Users/your-user/.gitconfig
 * **Finding the author of lines**
 
         git blame file.txt              # Shows the author of each line in file.txt
+        git blame -L 5,10 file.txt      # Shows the author of lines 5 to 10
         
 * **Tagging**
 
@@ -189,7 +192,7 @@ open the configuration file /Users/your-user/.gitconfig
         git tag                         # Lists all the tags
         git tag -d v1.0                 # Deletes the given tag
 
-### 
+### Branching
 
 * ****
 

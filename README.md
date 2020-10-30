@@ -115,3 +115,7 @@ open the configuration file /Users/your-user/.gitconfig
         git restore .                   # Discards all local changes (except untracked files)
         git clean -fd                   # Removes all untracked files
         
+* **Restoring an earlier version of a file**
+
+        git restore --source=HEAD~2 file.js
+

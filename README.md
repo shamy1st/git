@@ -132,11 +132,13 @@ open the configuration file /Users/your-user/.gitconfig
         git log --author="Ahmed"
         git log --before="2020-10-30"
         git log --after="one week ago"
-        git log --grep="GUI"            # Commits with “GUI” in their message
-        git log -S"GUI"                 # Commits with “GUI” in their patches
+        git log --grep="GUI"            # Commits with “GUI” in their message (case-sensitive)
+        git log -S"GUI"                 # Commits with “GUI” in their content (case-sensitive)
         git log hash1..hash2            # Range of commits
         git log file.txt                # Commits that touched file.txt
         
 * **Formatting the log output**
 
-        
+        git log --pretty=format:"%an committed %H"          # [Docs](https://git-scm.com/docs/git-log)
+
+* ****

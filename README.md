@@ -232,7 +232,7 @@ open the configuration file /Users/your-user/.gitconfig
             git merge bugfix                    # Merges the bugfix branch into the current branch
             git merge --no-ff bugfix            # Creates a merge commit even if FF is possible
             git merge --squash bugfix           # Performs a squash merge
-            git merge --abort                   # Aborts the merge
+            git merge --abort                   # Aborts the merge (if you find a conflicts and no time to solve)
         
 * **Viewing the merged branches**
 
@@ -252,6 +252,17 @@ open the configuration file /Users/your-user/.gitconfig
             
     * kdiff
     * winmerge (windows only)
+
+* **Undoing a Faulty Merge**
+
+    * **soft**
+    ![](https://github.com/shamy1st/git/blob/main/reset-soft.png)
+    * **mixed**
+    ![](https://github.com/shamy1st/git/blob/main/reset-mixed.png)
+    * **hard**
+    ![](https://github.com/shamy1st/git/blob/main/reset-hard.png)
+    
+        git reset --hard HEAD~1
 
 * **Rebasing**
 

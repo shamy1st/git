@@ -293,6 +293,7 @@ open the configuration file /Users/your-user/.gitconfig
             ![](https://github.com/shamy1st/git/blob/main/reset-hard.png)
 
 * **Rebasing**
+![#f03c15](caution): use it only for branches and commits **local** repository, because it **rewrites history** and may cause a big mess.
 
         git rebase master               # Changes the base of the feature branch (do it in the feature branch)
         git switch master               # Switch to master branch

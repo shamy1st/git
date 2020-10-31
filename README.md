@@ -224,8 +224,9 @@ open the configuration file /Users/your-user/.gitconfig
     * **Fast-Forward Merge**: if the branches have not diverged.
         * only move pointer to the last commit in the branch.
         * to prevent fast-forward merge use "--no-ff".
-        * git config ff no , disable any fast-forward merge in current repository.
-        * git config --global ff no , disable any fast-forward merge in all repositories.
+                
+                git config ff no                #disable any fast-forward merge in current repository.
+                git config --global ff no       #disable any fast-forward merge in all repositories.
         
         ![](https://github.com/shamy1st/git/blob/main/fast-forward-merge.png)
         

@@ -297,6 +297,7 @@ open the configuration file /Users/your-user/.gitconfig
 ```diff 
 - caution: use only in local repository, because it rewrites history, may cause big mess to others.
 ```
+
         git rebase master               # Changes the base of the feature branch (do it in the feature branch)
         git switch master               # Switch to master branch
         git merge feature               # Fast-forward merge
@@ -305,9 +306,9 @@ open the configuration file /Users/your-user/.gitconfig
         git rebase --abort              # Cancel rebase
         git rebase --skip               # Skip current commit of rebase if it is not important!
 
-    ![](https://github.com/shamy1st/git/blob/main/rebase-1.png)
-    ![](https://github.com/shamy1st/git/blob/main/rebase-2.png)
-    ![](https://github.com/shamy1st/git/blob/main/rebase-3.png)
+![](https://github.com/shamy1st/git/blob/main/rebase-1.png)
+![](https://github.com/shamy1st/git/blob/main/rebase-2.png)
+![](https://github.com/shamy1st/git/blob/main/rebase-3.png)
 
 * **Cherry picking**
 

@@ -226,6 +226,9 @@ open the configuration file /Users/your-user/.gitconfig
         * to prevent fast-forward merge use "--no-ff".
         * git config ff no , disable any fast-forward merge in current repository.
         * git config --global ff no , disable any fast-forward merge in all repositories.
+        
+    ![](https://github.com/shamy1st/git/blob/main/fast-forward-merge.png)
+        
     * **3-Way Merge**: if the branches diverged.
 
             git log --oneline --all --graph     # 
@@ -233,6 +236,8 @@ open the configuration file /Users/your-user/.gitconfig
             git merge --no-ff bugfix            # Creates a merge commit even if FF is possible
             git merge --squash bugfix           # Performs a squash merge
             git merge --abort                   # Aborts the merge (if you find a conflicts and no time to solve)
+            
+    ![](https://github.com/shamy1st/git/blob/main/3way-merge.png)
         
 * **Viewing the merged branches**
 
@@ -254,15 +259,19 @@ open the configuration file /Users/your-user/.gitconfig
     * winmerge (windows only)
 
 * **Undoing a Faulty Merge**
+    * **revert**
+            
+            git revert -m 1 HEAD
+            
+    * **resetting**
+        * **soft**
+        ![](https://github.com/shamy1st/git/blob/main/reset-soft.png)
+        * **mixed**
+        ![](https://github.com/shamy1st/git/blob/main/reset-mixed.png)
+        * **hard**
 
-    * **soft**
-    ![](https://github.com/shamy1st/git/blob/main/reset-soft.png)
-    * **mixed**
-    ![](https://github.com/shamy1st/git/blob/main/reset-mixed.png)
-    * **hard**
-        
-            git reset --hard HEAD~1
-        ![](https://github.com/shamy1st/git/blob/main/reset-hard.png)
+                git reset --hard HEAD~1
+            ![](https://github.com/shamy1st/git/blob/main/reset-hard.png)
 
 * **Rebasing**
 
@@ -308,7 +317,6 @@ open the configuration file /Users/your-user/.gitconfig
 ### Rewriting History
 
 * **Undoing commits**
-
         git reset --soft HEAD^          # Removes the last commit, keeps changed staged
         git reset --mixed HEAD^         # Unstages the changes as well
         git reset --hard HEAD^          # Discards local changes

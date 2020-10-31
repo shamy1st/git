@@ -227,7 +227,7 @@ open the configuration file /Users/your-user/.gitconfig
         * git config ff no , disable any fast-forward merge in current repository.
         * git config --global ff no , disable any fast-forward merge in all repositories.
         
-    ![](https://github.com/shamy1st/git/blob/main/fast-forward-merge.png)
+        ![](https://github.com/shamy1st/git/blob/main/fast-forward-merge.png)
         
     * **3-Way Merge**: if the branches diverged.
 
@@ -237,7 +237,7 @@ open the configuration file /Users/your-user/.gitconfig
             git merge --squash bugfix           # Performs a squash merge
             git merge --abort                   # Aborts the merge (if you find a conflicts and no time to solve)
             
-    ![](https://github.com/shamy1st/git/blob/main/3way-merge.png)
+        ![](https://github.com/shamy1st/git/blob/main/3way-merge.png)
         
 * **Viewing the merged branches**
 

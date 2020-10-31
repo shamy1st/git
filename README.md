@@ -222,12 +222,16 @@ open the configuration file /Users/your-user/.gitconfig
         
 * **Merging**
     * **Fast-Forward Merge**: if the branches have not diverged.
+        * only move pointer to the branch last commit.
+        * to prevent use "--no-ff"
+        * git config --global ff no , this config prevent any fast-forward merge.
     * **3-Way Merge**: if the branches diverged.
 
-            git merge bugfix                # Merges the bugfix branch into the current branch
-            git merge --no-ff bugfix        # Creates a merge commit even if FF is possible
-            git merge --squash bugfix       # Performs a squash merge
-            git merge --abort               # Aborts the merge
+            git log --oneline --all --graph     # 
+            git merge bugfix                    # Merges the bugfix branch into the current branch
+            git merge --no-ff bugfix            # Creates a merge commit even if FF is possible
+            git merge --squash bugfix           # Performs a squash merge
+            git merge --abort                   # Aborts the merge
         
 * **Viewing the merged branches**
 

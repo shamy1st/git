@@ -314,6 +314,10 @@ open the configuration file /Users/your-user/.gitconfig
     ![](https://github.com/shamy1st/git/blob/main/cherry-pick-2.png)
     ![](https://github.com/shamy1st/git/blob/main/cherry-pick-3.png)
         
+* **Picking a File from Another Branch**
+
+        git restore --source=feature-branch file.txt
+        
 ### Collaboration
 
 * **Cloning a repository**

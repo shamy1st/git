@@ -196,16 +196,19 @@ open the configuration file /Users/your-user/.gitconfig
 
 * **Managing branches**
 
-        git branch bugfix               # Creates a new branch called bugfix
-        git checkout bugfix             # Switches to the bugfix branch
-        git switch bugfix               # Same as the above
-        git switch -C bugfix            # Creates and switches
-        git branch -d bugfix            # Deletes the bugfix branch
+        git branch bugfix                           # Creates a new branch called bugfix
+        git branch -m bugfix bugfix/signup-form     # Rename branch
+        git checkout bugfix                         # Switches to the bugfix branch
+        git switch bugfix                           # Same as the above
+        git switch -C bugfix                        # Creates and switches
+        git branch -d bugfix                        # Deletes the bugfix branch
         
 * **Comparing branches**
 
-        git log master..bugfix          # Lists the commits in the bugfix branch not in master
-        git diff master..bugfix         # Shows the summary of changes
+        git log master..bugfix              # Lists the commits in the bugfix branch not in master
+        git diff master..bugfix             # Shows the summary of changes
+        git diff bugfix                     # If current branch is master, it will list the differences
+        git diff --name-status bugfix       # List only difference files with status
         
 * **Stashing**
 
@@ -218,11 +221,13 @@ open the configuration file /Users/your-user/.gitconfig
         git stash clear                     # Deletes all the stashes
         
 * **Merging**
+    * **Fast-Forward Merge**: if the branches have not diverged.
+    * **3-Way Merge**: if the branches diverged.
 
-        git merge bugfix                # Merges the bugfix branch into the current branch
-        git merge --no-ff bugfix        # Creates a merge commit even if FF is possible
-        git merge --squash bugfix       # Performs a squash merge
-        git merge --abort               # Aborts the merge
+            git merge bugfix                # Merges the bugfix branch into the current branch
+            git merge --no-ff bugfix        # Creates a merge commit even if FF is possible
+            git merge --squash bugfix       # Performs a squash merge
+            git merge --abort               # Aborts the merge
         
 * **Viewing the merged branches**
 

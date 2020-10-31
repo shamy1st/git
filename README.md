@@ -221,6 +221,11 @@ open the configuration file /Users/your-user/.gitconfig
         git stash clear                     # Deletes all the stashes
         
 * **Merging**
+
+        git log --oneline --all --graph     # 
+        git merge bugfix                    # Merges the bugfix branch into the current branch (fast-forward by default)
+        git merge --abort                   # Aborts the merge (if you find a conflicts and no time to solve)
+        
     * **Fast-Forward Merge**: if the branches have not diverged.
         * only move pointer to the last commit in the branch
         * to prevent fast-forward merge use "--no-ff" with "merge" command
@@ -232,10 +237,7 @@ open the configuration file /Users/your-user/.gitconfig
         
     * **3-Way Merge**: if the branches diverged.
 
-            git log --oneline --all --graph     # 
-            git merge bugfix                    # Merges the bugfix branch into the current branch
             git merge --no-ff bugfix            # Creates a merge commit even if FF is possible
-            git merge --abort                   # Aborts the merge (if you find a conflicts and no time to solve)
             
         ![](https://github.com/shamy1st/git/blob/main/3way-merge.png)
 

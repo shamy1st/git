@@ -295,8 +295,7 @@ open the configuration file /Users/your-user/.gitconfig
 * **Rebasing**
 
 ```diff 
-- caution: use it only for (branches, commits) in local repository, 
-    because it rewrites history and may cause a big mess for your team.
+- caution: use only in local repository, because it rewrites history, may cause a big mess to others.
 ```
         git rebase master               # Changes the base of the feature branch (do it in the feature branch)
         git switch master               # Switch to master branch

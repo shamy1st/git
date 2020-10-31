@@ -222,9 +222,9 @@ open the configuration file /Users/your-user/.gitconfig
         
 * **Merging**
     * **Fast-Forward Merge**: if the branches have not diverged.
-        * only move pointer to the branch last commit.
-        * to prevent use "--no-ff"
-        * git config --global ff no , this config prevent any fast-forward merge.
+        * only move pointer to the last commit in the branch.
+        * to prevent fast-forward merge use "--no-ff".
+        * git config --global ff no , this config prevent any fast-forward merge in your machine.
     * **3-Way Merge**: if the branches diverged.
 
             git log --oneline --all --graph     # 

@@ -235,11 +235,18 @@ open the configuration file /Users/your-user/.gitconfig
             git log --oneline --all --graph     # 
             git merge bugfix                    # Merges the bugfix branch into the current branch
             git merge --no-ff bugfix            # Creates a merge commit even if FF is possible
-            git merge --squash bugfix           # Performs a squash merge
             git merge --abort                   # Aborts the merge (if you find a conflicts and no time to solve)
             
         ![](https://github.com/shamy1st/git/blob/main/3way-merge.png)
+
+    * **Squash Merge**: 
+    
+            git merge --squash bugfix           # Performs a squash merge
         
+        ![](https://github.com/shamy1st/git/blob/main/squash-merge-1.png)
+        ![](https://github.com/shamy1st/git/blob/main/squash-merge-2.png)
+        ![](https://github.com/shamy1st/git/blob/main/squash-merge-3.png)
+
 * **Viewing the merged branches**
 
         git branch --merged             # Shows the merged branches

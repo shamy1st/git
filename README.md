@@ -238,7 +238,21 @@ open the configuration file /Users/your-user/.gitconfig
 
         git branch --merged             # Shows the merged branches
         git branch --no-merged          # Shows the unmerged branches
-        
+
+* **Merge Conflicts**
+1. change into single file by two different ways.
+2. delete a file in a branch, and update it in another.
+3. add new file but the content is different.
+
+* **Merge Tools**
+    * p4merge
+            
+            git config --global merge.tool p4merge
+            git config --global mergetool.p4merge.path "/Applications/p4merge.app/Contents/MacOS/p4merge"
+            
+    * kdiff
+    * winmerge (windows only)
+
 * **Rebasing**
 
         git rebase master               # Changes the base of the current branch

@@ -243,7 +243,9 @@ open the configuration file /Users/your-user/.gitconfig
 
     * **Squash Merge**: 
     
-            git merge --squash bugfix           # Performs a squash merge
+            git merge --squash bugfix           
+            git commit -am "Message"
+            git branch -D bugfix
         
         ![](https://github.com/shamy1st/git/blob/main/squash-merge-1.png)
         ![](https://github.com/shamy1st/git/blob/main/squash-merge-2.png)
@@ -285,8 +287,14 @@ open the configuration file /Users/your-user/.gitconfig
 
 * **Rebasing**
 
-        git rebase master               # Changes the base of the current branch
-        
+        git rebase master               # Changes the base of the feature branch (do it in the feature branch)
+        git switch master               # Switch to master branch
+        git merge feature               # Fast-forward merge
+
+    ![](https://github.com/shamy1st/git/blob/main/rebase-1.png)
+    ![](https://github.com/shamy1st/git/blob/main/rebase-2.png)
+    ![](https://github.com/shamy1st/git/blob/main/rebase-3.png)
+
 * **Cherry picking**
 
         git cherry-pick dad47ed         # Applies the given commit on the current branch

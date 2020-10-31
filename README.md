@@ -262,7 +262,7 @@ open the configuration file /Users/your-user/.gitconfig
     * **hard**
     ![](https://github.com/shamy1st/git/blob/main/reset-hard.png)
     
-        git reset --hard HEAD~1
+            git reset --hard HEAD~1
 
 * **Rebasing**
 

@@ -338,7 +338,16 @@ open the configuration file /Users/your-user/.gitconfig
         git pull --rebase               # Fetch + rebase (linear history)
         git push origin master          # Pushes master to origin
         git push                        # Shortcut for "git push origin master"
+
+* **Storing credentials**
+
+        git credential-osxkeychain                              # check keychain installation
+        git config --global credential.helper cache             # store credentials for 15min in memory 
+        git config --global credential.helper osxkeychain       # store credentials for ever
         
+        For Windows
+        https://github.com/Microsoft/Git-Credential-Manager-for-Windows
+
 * **Sharing tags**
 
         git tag v1.0
@@ -348,14 +357,15 @@ open the configuration file /Users/your-user/.gitconfig
         
 * **Sharing branches**
 
-        git branch -r                   # Shows remote tracking branches
-        git branch -vv                  # Shows difference between local & remote tracking branches
-        git push -u origin bugfix       # Pushes bugfix branch to origin
-        git push -d origin bugfix       # Removes bugfix from origin
+        git branch -r                           # Shows remote tracking branches
+        git branch -vv                          # Shows difference between local & remote tracking branches
+        git push -u origin bugfix               # Pushes bugfix branch to origin
+        git push -d origin bugfix               # Removes bugfix from origin
+        git switch -C bugfix origin/bugfix      # Create local bugfix branch maps to remote origin/bugfix branch
+        
         
 * **Managing remotes**
 
-        git switch -C bugfix origin/bugfix      # Create local bugfix branch maps to remote origin/bugfix branch
         git remote                              # Shows remote repos
         git remote add upstream url             # Adds a new remote called upstream
         git remote rm upstream                  # Remotes upstream

@@ -349,15 +349,17 @@ open the configuration file /Users/your-user/.gitconfig
 * **Sharing branches**
 
         git branch -r                   # Shows remote tracking branches
-        git branch -vv                  # Shows local & remote tracking branches
-        git push -u origin bugfix       # Pushes bugfix to origin
+        git branch -vv                  # Shows difference between local & remote tracking branches
+        git push -u origin bugfix       # Pushes bugfix branch to origin
         git push -d origin bugfix       # Removes bugfix from origin
         
 * **Managing remotes**
 
-        git remote                      # Shows remote repos
-        git remote add upstream url     # Adds a new remote called upstream
-        git remote rm upstream          # Remotes upstream
+        git switch -C bugfix origin/bugfix      # Create local bugfix branch maps to remote origin/bugfix branch
+        git remote                              # Shows remote repos
+        git remote add upstream url             # Adds a new remote called upstream
+        git remote rm upstream                  # Remotes upstream
+        git remote prune origin                 # Remove remote tracking branch (local) which removed from origin 
 
 ### Rewriting History
 

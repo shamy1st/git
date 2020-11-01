@@ -233,13 +233,13 @@ open the configuration file /Users/your-user/.gitconfig
                 git config ff no                # Disable any fast-forward merge in current repository.
                 git config --global ff no       # Disable any fast-forward merge in all repositories.
         
-        ![](https://github.com/shamy1st/git/blob/main/fast-forward-merge.png)
+        ![](https://github.com/shamy1st/git/blob/main/images/fast-forward-merge.png)
         
     * **3-Way Merge**: if the branches diverged.
 
             git merge --no-ff bugfix            # Creates a merge commit even if FF is possible
             
-        ![](https://github.com/shamy1st/git/blob/main/3way-merge.png)
+        ![](https://github.com/shamy1st/git/blob/main/images/3way-merge.png)
 
     * **Squash Merge**: 
     
@@ -247,9 +247,9 @@ open the configuration file /Users/your-user/.gitconfig
             git commit -am "Message"
             git branch -D bugfix
         
-        ![](https://github.com/shamy1st/git/blob/main/squash-merge-1.png)
-        ![](https://github.com/shamy1st/git/blob/main/squash-merge-2.png)
-        ![](https://github.com/shamy1st/git/blob/main/squash-merge-3.png)
+        ![](https://github.com/shamy1st/git/blob/main/images/squash-merge-1.png)
+        ![](https://github.com/shamy1st/git/blob/main/images/squash-merge-2.png)
+        ![](https://github.com/shamy1st/git/blob/main/images/squash-merge-3.png)
 
 * **Viewing the merged branches**
 
@@ -284,13 +284,13 @@ open the configuration file /Users/your-user/.gitconfig
             
     * **resetting**
         * **soft**
-        ![](https://github.com/shamy1st/git/blob/main/reset-soft.png)
+        ![](https://github.com/shamy1st/git/blob/main/images/reset-soft.png)
         * **mixed**
-        ![](https://github.com/shamy1st/git/blob/main/reset-mixed.png)
+        ![](https://github.com/shamy1st/git/blob/main/images/reset-mixed.png)
         * **hard**
 
                 git reset --hard HEAD~1
-            ![](https://github.com/shamy1st/git/blob/main/reset-hard.png)
+            ![](https://github.com/shamy1st/git/blob/main/images/reset-hard.png)
 
 * **Rebasing**
 
@@ -306,17 +306,17 @@ open the configuration file /Users/your-user/.gitconfig
         git rebase --abort              # Cancel rebase
         git rebase --skip               # Skip current commit of rebase if it is not important!
 
-![](https://github.com/shamy1st/git/blob/main/rebase-1.png)
-![](https://github.com/shamy1st/git/blob/main/rebase-2.png)
-![](https://github.com/shamy1st/git/blob/main/rebase-3.png)
+![](https://github.com/shamy1st/git/blob/main/images/rebase-1.png)
+![](https://github.com/shamy1st/git/blob/main/images/rebase-2.png)
+![](https://github.com/shamy1st/git/blob/main/images/rebase-3.png)
 
 * **Cherry picking**
 
         git cherry-pick dad47ed         # Applies the given commit on the current branch
         
-    ![](https://github.com/shamy1st/git/blob/main/cherry-pick-1.png)
-    ![](https://github.com/shamy1st/git/blob/main/cherry-pick-2.png)
-    ![](https://github.com/shamy1st/git/blob/main/cherry-pick-3.png)
+    ![](https://github.com/shamy1st/git/blob/main/images/cherry-pick-1.png)
+    ![](https://github.com/shamy1st/git/blob/main/images/cherry-pick-2.png)
+    ![](https://github.com/shamy1st/git/blob/main/images/cherry-pick-3.png)
         
 * **Picking a File from Another Branch**
 

@@ -262,10 +262,17 @@ open the configuration file /Users/your-user/.gitconfig
 3. add new file but the content is different.
 
 * **Merge Tools**
+
+        git mergetool                   # Launch the default merge tool.
+
     * p4merge
             
+            #set default merge tool
             git config --global merge.tool p4merge
             git config --global mergetool.p4merge.path "/Applications/p4merge.app/Contents/MacOS/p4merge"
+            
+            #prevent mergetool to keep backup files
+            git config --global mergetool.keepBackup false
             
     * kdiff
     * winmerge (windows only)
@@ -287,17 +294,33 @@ open the configuration file /Users/your-user/.gitconfig
 
 * **Rebasing**
 
+```diff 
+- caution: use only in local repository, because it rewrites history, may cause big mess to others.
+```
+
         git rebase master               # Changes the base of the feature branch (do it in the feature branch)
         git switch master               # Switch to master branch
         git merge feature               # Fast-forward merge
+        
+        git rebase --continue           # If conflict happen solve it then continue rebase
+        git rebase --abort              # Cancel rebase
+        git rebase --skip               # Skip current commit of rebase if it is not important!
 
-    ![](https://github.com/shamy1st/git/blob/main/rebase-1.png)
-    ![](https://github.com/shamy1st/git/blob/main/rebase-2.png)
-    ![](https://github.com/shamy1st/git/blob/main/rebase-3.png)
+![](https://github.com/shamy1st/git/blob/main/rebase-1.png)
+![](https://github.com/shamy1st/git/blob/main/rebase-2.png)
+![](https://github.com/shamy1st/git/blob/main/rebase-3.png)
 
 * **Cherry picking**
 
         git cherry-pick dad47ed         # Applies the given commit on the current branch
+        
+    ![](https://github.com/shamy1st/git/blob/main/cherry-pick-1.png)
+    ![](https://github.com/shamy1st/git/blob/main/cherry-pick-2.png)
+    ![](https://github.com/shamy1st/git/blob/main/cherry-pick-3.png)
+        
+* **Picking a File from Another Branch**
+
+        git restore --source=feature-branch file.txt
         
 ### Collaboration
 
@@ -335,6 +358,7 @@ open the configuration file /Users/your-user/.gitconfig
 ### Rewriting History
 
 * **Undoing commits**
+
         git reset --soft HEAD^          # Removes the last commit, keeps changed staged
         git reset --mixed HEAD^         # Unstages the changes as well
         git reset --hard HEAD^          # Discards local changes

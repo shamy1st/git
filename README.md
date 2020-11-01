@@ -30,8 +30,8 @@ open the configuration file /Users/your-user/.gitconfig
         For Windows
         git config --global core.autocrlf true
   
-    ![](https://github.com/shamy1st/git/blob/main/config-line-ending-1.png)
-    ![](https://github.com/shamy1st/git/blob/main/config-line-ending-2.png)
+    ![](https://github.com/shamy1st/git/blob/main/images/config-line-ending-1.png)
+    ![](https://github.com/shamy1st/git/blob/main/images/config-line-ending-2.png)
 
 ### Snapshots
 

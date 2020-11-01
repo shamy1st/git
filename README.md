@@ -368,8 +368,15 @@ open the configuration file /Users/your-user/.gitconfig
 
         git remote                              # Shows remote repos
         git remote add upstream url             # Adds a new remote called upstream
+        git remote rename upstream base         # Rename remote from upstream to base
         git remote rm upstream                  # Remotes upstream
-        git remote prune origin                 # Remove remote tracking branch (local) which removed from origin 
+        git remote prune origin                 # Remove remote tracking branch (local) which removed from origin
+        
+        # to update forked repository from base repository
+        git fetch base                          # fetch from base repository
+        git switch master
+        git merge base/master
+        git push origin
 
 ### Rewriting History
 

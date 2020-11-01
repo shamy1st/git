@@ -327,20 +327,24 @@ open the configuration file /Users/your-user/.gitconfig
 * **Cloning a repository**
 
         git clone url
+        git clone url ProjectName
         
 * **Syncing with remotes**
 
         git fetch origin master         # Fetches master from origin
         git fetch origin                # Fetches all objects from origin
         git fetch                       # Shortcut for "git fetch origin"
-        git pull                        # Fetch + merge
+        git pull                        # Fetch + merge (3-way)
+        git pull --rebase               # Fetch + rebase (linear history)
         git push origin master          # Pushes master to origin
         git push                        # Shortcut for "git push origin master"
         
 * **Sharing tags**
 
+        git tag v1.0
         git push origin v1.0            # Pushes tag v1.0 to origin
-        git push origin —delete v1.0    
+        git push origin —delete v1.0    # Delete from remote
+        git tag -d v1.0                 # Delete from local
         
 * **Sharing branches**
 

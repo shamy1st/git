@@ -1,6 +1,13 @@
 # Git
 **Git** is the most popular version control system.
 
+### Why Git?
+* Free
+* Open Source
+* Super Fast
+* Scalable
+* Cheap Branching/Merging
+
 ### Configuration
 open the configuration file /Users/your-user/.gitconfig
 

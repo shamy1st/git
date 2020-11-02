@@ -392,27 +392,41 @@ open the configuration file /Users/your-user/.gitconfig
 ```
 
 * **Undoing commits**
+step back a commit locally
 
-        git reset --soft HEAD^          # Removes the last commit, keeps changed staged
+        git reset --soft HEAD^          # Removes the last commit, keeps changed (local, staged)
         git reset --mixed HEAD^         # Unstages the changes as well
         git reset --hard HEAD^          # Discards local changes
+                                        # ^ mean to parent
         
 * **Reverting commits**
+step back a commit shared with others
 
-        git revert 72856ea                  # Reverts the given commit
-        git revert HEAD~3..                 # Reverts the last three commits
-        git revert --no-commit HEAD~3..     
+        git revert 72856ea                      # Reverts the given commit
+        git revert HEAD~3..HEAD                 # Reverts the last three commits
+        git revert HEAD~3..                     # for simplicty remove HEAD (same as before)
+        git revert --no-commit HEAD~3..HEAD     # 
+        git revert --no-commit HEAD~3..         # for simplicty remove HEAD (same as before)
+        git revert --continue                   # complete revert with commit
+        git revert --abort                      # cancel revert
         
 * **Recovering lost commits**
 
-        git reflog                      # Shows the history of HEAD
-        git reflog show bugfix          # Shows the history of bugfix pointer
+        git reflog                              # Shows the history of HEAD
+        git reflog show bugfix                  # Shows the history of bugfix pointer
         
-* **Amending the last commit**
+* **Amending (modify) the last commit**
 
-        git commit --amend
+        git commit --amend                  # modify the last commit
+        git commit --amend -m "Message"     # modify the last commit with message
         
 * **Interactive rebasing**
+modify old commit (do only for local, dangerous for public)
 
         git rebase -i HEAD~5
 
+* **Drop a commit**
+
+        git rebase -i 6caf935^
+        
+        

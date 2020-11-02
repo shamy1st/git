@@ -420,8 +420,7 @@ step back a commit shared with others
         git commit --amend                  # modify the last commit
         git commit --amend -m "Message"     # modify the last commit with message
         
-* **Interactive rebasing**
-modify old commit (complex process see video)
+* **Interactive rebasing** modify old commit (complex process see video)
 
         git rebase -i HEAD~5
 
@@ -430,23 +429,23 @@ modify old commit (complex process see video)
  
         git rebase -i 6caf935^
         
-* **Edit a commit message (reword)**
-interactive rebasing (complex process see video)
+* **Edit a commit message (reword)** (using interactive rebasing) (complex process see video)
         
         git rebase -i 6caf935^
 
-* **Reorder a commit**
-interactive rebasing (complex process see video)
+* **Reorder a commit** (using interactive rebasing) (complex process see video)
         
         git rebase -i 6caf935^
 
-* **Squashing commits**
-combine multiple commits together (using interactive rebasing) (complex process see video)
+* **Squashing commits** combine multiple commits together
+
+(using interactive rebasing) (complex process see video)
         
         git rebase -i 6caf935
 
-* **Splitting a Commit**
-split one commit into two or more commits (using interactive rebasing) (complex process see video)
+* **Splitting a Commit** split one commit into two or more commits
+
+(using interactive rebasing) (complex process see video)
         
         git rebase -i 6caf935^
 

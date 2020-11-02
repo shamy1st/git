@@ -404,9 +404,9 @@ step back a commit shared with others
 
         git revert 72856ea                      # Reverts the given commit
         git revert HEAD~3..HEAD                 # Reverts the last three commits
-        git revert HEAD~3..                     # for simplicty remove HEAD (same as before)
+        git revert HEAD~3..                     # for simplicity remove HEAD (same as before)
         git revert --no-commit HEAD~3..HEAD     # 
-        git revert --no-commit HEAD~3..         # for simplicty remove HEAD (same as before)
+        git revert --no-commit HEAD~3..         # for simplicity remove HEAD (same as before)
         git revert --continue                   # complete revert with commit
         git revert --abort                      # cancel revert
         
@@ -421,12 +421,32 @@ step back a commit shared with others
         git commit --amend -m "Message"     # modify the last commit with message
         
 * **Interactive rebasing**
-modify old commit (do only for local, dangerous for public)
+modify old commit (complex process see video)
 
         git rebase -i HEAD~5
 
 * **Drop a commit**
-
+ (complex process see video)
+ 
         git rebase -i 6caf935^
         
+* **Edit a commit message (reword)**
+interactive rebasing (complex process see video)
         
+        git rebase -i 6caf935^
+
+* **Reorder a commit**
+interactive rebasing (complex process see video)
+        
+        git rebase -i 6caf935^
+
+* **Squashing commits**
+combine multiple commits together (using interactive rebasing) (complex process see video)
+        
+        git rebase -i 6caf935
+
+* **Splitting a Commit**
+split one commit into two or more commits (using interactive rebasing) (complex process see video)
+        
+        git rebase -i 6caf935^
+

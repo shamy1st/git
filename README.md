@@ -391,6 +391,8 @@ open the configuration file /Users/your-user/.gitconfig
 - Rule: Don't rewrite public history. (after push it is public history)
 ```
 
+You can do all of rewritting history operations using GitKraken like a magic (except modify commit, split commit).
+
 * **Undoing commits**
 step back a commit locally
 

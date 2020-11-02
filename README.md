@@ -1,7 +1,7 @@
 # Git
 **Git** is the most popular version control system.
 
-### Why Git?
+### Why?
 * Free
 * Open Source
 * Super Fast

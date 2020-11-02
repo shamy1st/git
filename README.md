@@ -387,6 +387,10 @@ open the configuration file /Users/your-user/.gitconfig
 
 ### Rewriting History
 
+```diff 
+- Rule: Don't rewrite public history. (after push it is public history)
+```
+
 * **Undoing commits**
 
         git reset --soft HEAD^          # Removes the last commit, keeps changed staged
